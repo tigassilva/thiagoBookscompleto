@@ -1,0 +1,112 @@
+.contato{
+    padding: 1.5em 1.5em;   
+    background: var(--branco);
+    color: var(--azul);
+    font-family: var(--fonte-principal);
+   
+    
+}
+.contato__titulo{
+    font-weight: 500;
+    font-size: 1.125em;
+    text-align: left;
+    padding: 0 0 0.5em 0;
+}
+.contato__texto{
+    font-weight: 300;
+    font-size: 1em;
+    padding-bottom: 1.5em;
+}
+.contato__email{
+    padding: 0.5em;    
+    width:100%;
+    border: 0.063em solid var(--azul);
+    border-radius: 1.5em;
+    font-weight: 400;
+    font-size: 1em;
+    box-sizing: border-box;
+   
+}
+hr{margin:0}
+.contato__email::placeholder{
+    background: url("/assets/Email.svg") no-repeat 1em;
+    text-align: left;
+    padding-left: 3em;
+    color: var(--azul);
+    font-family: var(--fonte-principal);
+}
+
+.rodape{
+    padding: 1em;    
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1em;
+    background: var(--branco);
+    color: var(--azul);
+}
+
+.lista__rodape{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        
+    }
+    .contato__titulo{
+        font-size: 1.5em;
+    }
+
+    .contato__descricao{
+        width: 30%;
+    }
+
+    .contato__email{        
+        width: 30%;
+        padding: 0.2em 0 0.2em 0;
+    }
+    .lista__rodape{
+        display: block;
+    }
+    
+    .rodape{
+        padding-top: 3em;
+        display: flex;
+        justify-content: space-around;  
+
+    }
+
+    .rodape__titulo{
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+    .lista__rodape__item{
+        display: flex;
+        align-items: center;
+        gap: 0.2em;
+        margin: 1em 0;
+    }
+
+    .lista__rodape__link{
+        text-decoration: none;
+        color: var(--azul);
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .contato{
+        padding: 3em 15vw;
+    }
+
+    .lista__rodape{
+        border-left: 0.063em solid var(--azul);
+        padding-left: 1em;
+        
+    }
+}

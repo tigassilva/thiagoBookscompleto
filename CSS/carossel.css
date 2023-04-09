@@ -1,0 +1,207 @@
+:root{
+  --cor-de-fundo: #EBECEE;
+  --branco: #FFFFFF;
+  --laranja: #eB9b00;
+  --azul: #002f52;
+  --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+  --fonte-principal: 'Poppins', sans-serif; 
+}
+
+.carrosel{
+    color: var(--laranja);    
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 1.125em;
+    padding: 1em 0;
+    margin: 1em;
+}
+
+.carrosel__titulo{
+  margin-top: 0.5em;
+  padding: 1em;
+  font-family: var(--fonte-principal);
+  font-weight: 700;
+  color: var(--laranja);
+  background-color: var(--branco);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.swiper-slide img {
+    width: 100%;
+    
+  }
+
+  .swiper-button-prev, .swiper-button-next{
+    display: none;
+  }
+  .swiper-pagination{
+    position: initial;
+    margin: 0.5em 0;
+  }
+
+  .card{
+    background: var(--branco);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 0.5em 0;
+    padding: 1em;
+  }
+  .imagem-card{
+    width: 30%;
+  }
+
+  .card__descricao{
+    display:flex;
+    justify-content: space-between;
+    text-align:left;
+    width: 100%;
+  }
+  .card__botoes{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  .botoes{
+    display: flex;
+    align-items: center;
+    width: 70%;;
+  }
+  .descricao{
+    margin: 0 0.5em 0;
+    width: 70%;
+  }
+
+  .descricao__titulo{
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1em;
+    margin-bottom: 1em;
+    color: var(--laranja);
+  }
+  .descricao__titulo-livro{
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1em;
+    margin-bottom: 1em;
+    color: var(--azul); 
+    
+  }
+
+  .descricao__texto{
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1em;
+    margin-bottom: 0,5em;
+    color: rgba(0, 0, 0, 0.85);
+    
+  }
+  .botoes{
+    margin-top: 0.5em;
+    width: 70%;
+  }
+
+  .botoes__saibaMais{
+    background-color: var(--laranja);
+    padding: 0.5em;
+    text-decoration: none;
+    color: var(--branco);
+    width: 25.8%;
+  }
+
+  .mais-vendidos{
+    color: var(--laranja);    
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 18px;
+    padding: 1em 0;
+    margin: 1em;
+  }
+  .mais-vendidos__carrosel{
+    margin-top: 0.5em;
+    padding: 1em;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    color: var(--laranja);
+    background-color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .descricao__estrela{
+    display: flex;
+  }
+
+  @media screen and (min-width:1024px) {
+    .carrosel{      
+      margin: 0;
+    }
+    .carrosel__titulo{
+      font-weight: 700;
+      font-size: 1.625em;
+      
+    }
+    .swiper-pagination{
+      margin-top: 1em;
+      margin-bottom: 5em;
+    }
+
+    .swiper{
+      width: 55%;      
+      margin-bottom: 3em;
+    }   
+
+    .card{
+      margin: 0 auto;  
+      width: 45%;
+    }
+    .mais-vendidos{
+      margin: 0;
+    }
+
+    .mais-vendidos__carrosel{
+      font-weight: 700;
+      font-size: 1.625em;
+    }
+    .botoes__saibaMais{
+      width: 25%;
+    }
+
+  }
+
+  @media screen and (min-width: 1728px) {
+    .carrosel-container{
+      display: flex;
+      align-items: center;
+      margin: 0 20vw 3em 20vw;
+      gap: 1em
+    }
+
+    .swiper{
+      width: 60%;
+    }
+    
+    .swiper-pagination{
+      margin: 1em;
+    }
+
+    .descricao__titulo{
+      font-size: 1.5em;
+    }
+    .descricao__texto{
+      font-size: 1em;
+    }
+    .card{
+      width: 60%;
+      margin: 1em 0 0 3em;
+    }
+
+  }
